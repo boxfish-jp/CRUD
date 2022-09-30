@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href="/stylesheets/style.css" /> 
+</head>
+<body>
+<head>
+    <h1><%= title %></h1>
+</head>
+<div role="main">
+    <p><%= content %></p>
+    <form action="/add" method="post">
+        <table>
+            <tr>
+                <th>user_id</th>
+                <td><input type="number" name="user_id" value=""></td>
+            </tr>
+            <tr>
+                <th>name</th>
+                <td><input type="text" name="name" value=""></td>
+            </tr>
+            <tr>
+                <th>message</th>
+                <td><input type="text" name="message" value=""></td>
+            </tr>
+            <tr>
+                <th>post_data</th>
+                <td><input type="text" name="post_data" value=""></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" value="送信"></td>
+            </tr>
+        </table>    
+    </form>
+</div>
+</body>
+</html>

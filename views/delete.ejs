@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+<body>
+<head>
+    <h1><%= title %></h1>
+</head>
+<div role="main">
+    <p><%= content %></p>
+    <table>
+        <tr>
+            <th>user_id</th>
+            <td><%= message.user_id %></td>
+        </tr>
+        <tr>
+            <th>name</th>
+            <td><%= message.name %></td>
+        </tr>
+        <tr>
+            <th>message</th>
+            <td><%= message.message %></td>
+        </tr>
+        <tr>
+            <th>post_data</th>
+            <td><%= message.post_data%></td>
+        </tr>
+    </table>
+    <form action="/delete" method="post">
+        <input type="hidden" name="message_id" value="<%= message.message_id %>">
+        <p><input type="submit" value="送信"></p>
+    </form>
+</div>
+</body>
+</html>
