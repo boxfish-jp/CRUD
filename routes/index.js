@@ -3,9 +3,9 @@ var router = express.Router();
 var mysql = require('mysql');
 
 var mysql_setting = {
-  host: 'localhost',
-  user: 'root',
-  password: 'password',
+  host: 'iu51mf0q32fkhfpl.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+  user: '	g765m8d5fcv19zet',
+  password: 'o1weh6t3ibh0teag',
   database: 'board'
 }
 
